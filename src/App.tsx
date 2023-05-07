@@ -1,18 +1,29 @@
-import { Route, Routes } from 'react-router-dom';
-import {Counter} from './components/Counter';
-import './index.scss'
-import AboutPage from './Pages/AboutPage/AboutPage';
-import MainPage from './Pages/MainPage/MainPage';
-import { Link } from 'react-router-dom';
+import { Route, Routes, Link } from 'react-router-dom';
+import { Suspense } from 'react';
+
+import { AboutPageAsync } from './pages/AboutPage/AboutPage.async';
+import { MainPageAsync } from './pages/MainPage/MainPage.async';
+
+import './styles/index.scss'
+import { useTheme } from './theme/useTheme';
+
+
 
 const App = () => {
-    return (
-        <div className='app'>
-            <Link></Link>
-            <Routes>
-                <Route path={'/about'} element={<AboutPage />}/>
-                <Route path={'/'} element={<MainPage />}/>
-            </Routes>
+    const {theme, toggleTheme} = useTheme();
+
+
+    return (    
+        <div className={`app ${theme}`}>
+            <button onClick={toggleTheme}>TOGGLE THEME</button>
+            <Link to={'/'}>Главная</Link>
+            <Link to={'/about'}>О сайте</Link>
+            <Suspense fallback={<div>Loading...</div>}>
+                <Routes>
+                    <Route path={'/about'} element={<AboutPageAsync />}/>
+                    <Route path={'/'} element={<MainPageAsync />}/>
+                </Routes>
+            </Suspense>
         </div>
     );
 };
