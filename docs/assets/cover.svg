@@ -1,1 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="340" viewBox="0 0 1200 340" role="img" aria-labelledby="title"><title id="title">React architecture — illustrated project overview</title><rect x=".5" y=".5" width="1199" height="339" rx="22" fill="#11151f" stroke="#303545"/><path d="M802 33v274" stroke="#303545"/><g font-family="Arial, Helvetica, sans-serif"><text x="46" y="66" fill="#b5a1ff" font-size="15" font-weight="700" letter-spacing="2.5">01 / FRONTEND</text><text x="43" y="145" fill="#f3f4f8" font-size="48" font-weight="700" letter-spacing="-1.5">React architecture</text><text x="46" y="192" fill="#b0b6c6" font-size="21">Routes. Themes. Reusable components.</text><text x="46" y="279" fill="#b5a1ff" font-size="15" letter-spacing="1.1">REACT · TYPESCRIPT · SCSS</text></g><rect x="830" y="71" width="316" height="202" rx="14" fill="#191d2a" stroke="#38394e"/><path d="M830 109h316" stroke="#38394e"/><circle cx="850" cy="90" r="4" fill="#b5a1ff"/><circle cx="865" cy="90" r="4" fill="#b5a1ff" opacity=".5"/><rect x="846" y="124" width="50" height="131" rx="6" fill="#b5a1ff" opacity=".22"/><rect x="910" y="124" width="218" height="49" rx="6" fill="#b5a1ff" opacity=".8"/><rect x="910" y="188" width="101" height="67" rx="6" fill="#b5a1ff" opacity=".18"/><rect x="1025" y="188" width="103" height="67" rx="6" fill="#9ae8c1" opacity=".45"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="460" viewBox="0 0 960 460" role="img" aria-labelledby="title description">
+  <title id="title">React + TypeScript — Интерфейсы на React</title>
+  <desc id="description">Концептуальная иллюстрация проекта, не снимок приложения.</desc>
+  <rect width="960" height="460" rx="28" fill="#f4f3ec"/>
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif">
+    <text x="44" y="64" fill="#52675b" font-size="30">React + TypeScript</text>
+    <text x="40" y="167" fill="#34453d" font-size="62" font-weight="650" letter-spacing="-1.2">Интерфейсы</text>
+    <text x="40" y="242" fill="#34453d" font-size="62" font-weight="650" letter-spacing="-1.2">на React</text>
+    <text x="44" y="389" fill="#52675b" font-size="30">Компоненты · темы · локализация</text>
+  </g>
+  <g transform="translate(640 90)">
+    <circle cx="123" cy="126" r="126" fill="#e7e8df"/>
+    <rect x="11" y="43" width="223" height="47" rx="23.5" fill="#b2c4aa"/>
+    <rect x="11" y="108" width="73" height="104" rx="22" fill="#d1ccde"/>
+    <rect x="102" y="108" width="132" height="104" rx="22" fill="#bccbb6"/>
+    <path d="m127 160 17 16 35-37" fill="none" stroke="#566e56" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>
