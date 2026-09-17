@@ -1,1 +1,1 @@
-# Учебный проект Ulbi TV
+# Advanced Frontend Project

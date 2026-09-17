@@ -47,6 +47,8 @@ export const Button: FC<ButtonProps> = (props) => {
             type="button"
             className={classNames(cls.Button, modes, [className])}
             disabled={disabled}
+            // The component intentionally passes through native button props.
+            // eslint-disable-next-line react/jsx-props-no-spreading
             {...otherProps}
         >
             {children}

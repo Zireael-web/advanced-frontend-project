@@ -1,6 +1,6 @@
 import { classNames } from 'shared/lib/classNames/classNames';
 import React, {
-    InputHTMLAttributes, memo, useEffect, useRef, useState,
+    InputHTMLAttributes, memo, useEffect, useRef,
 } from 'react';
 import cls from './Input.module.scss';
 
@@ -24,12 +24,10 @@ export const Input = memo((props: InputProps) => {
         ...otherProps
     } = props;
 
-    const [onFocus, setOnFocus] = useState(false);
     const ref = useRef<HTMLInputElement>(null);
 
     useEffect(() => {
         if (autofocus) {
-            setOnFocus(true);
             ref.current?.focus();
         }
     }, [autofocus]);
@@ -51,6 +49,8 @@ export const Input = memo((props: InputProps) => {
                 value={value}
                 ref={ref}
                 onChange={onChangeHandler}
+                // The component intentionally passes through native input props.
+                // eslint-disable-next-line react/jsx-props-no-spreading
                 {...otherProps}
             />
         </div>

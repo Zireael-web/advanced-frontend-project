@@ -3,7 +3,6 @@ import React, {
     ReactNode, useCallback, useEffect, useState,
 } from 'react';
 import { Portal } from 'shared/ui/Portal/Portal';
-import { useTheme } from 'app/providers/ThemeProvider';
 import cls from './Modal.module.scss';
 
 interface ModalProps {
@@ -18,7 +17,6 @@ export const Modal = (props: ModalProps) => {
     const {
         className, children, isOpen, onClose, lazy,
     } = props;
-    const { theme } = useTheme();
     const [isMounted, setIsMounted] = useState(false);
 
     useEffect(() => {
